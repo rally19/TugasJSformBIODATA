@@ -1,0 +1,164 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 20px;
+}
+
+.body {
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3, a {
+    text-align: center;
+    color: #158cd1;
+}
+
+h1 {
+    margin-top: 20px;
+}   
+
+h2 {
+    margin-top: 50px;
+}
+
+h3 {
+    margin-top: 40px;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 40px;
+    display: block;
+    right: 8vw;
+    position: fixed;
+    margin: 0 auto;
+}
+
+fieldset {
+    border: 2px solid #158cd1;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+legend {
+    font-weight: bold;
+    color: #158cd1;
+    padding: 0 10px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+input:hover, select:hover {
+    border-color: #808080;
+    outline: none;
+    box-shadow: 0 0 5px rgba(87, 87, 87, 0.5);
+}
+
+input:focus, select:focus {
+    border-color: #158cd1;
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 117, 175, 0.5);
+}
+
+button {
+    background-color: #158cd1;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 75%;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+button:hover {
+    background-color: #1383c4;
+    box-shadow: 0 0 5px rgba(127, 138, 153, 0.5);
+}
+
+#divSiswa {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+td {
+    border: 1px solid #dedede;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    text-align: center;
+    font-size: 16px;
+    border: 1px solid #dedede;
+    background-color: #158cd1;
+    color: #ffffff;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #f4f3f3;
+}
+
+tr:hover {
+    background-color: #dedede;
+}
+
+@media (max-width: 600px) {
+    input, select, button {
+        font-size: 14px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    fieldset {
+        padding: 10px;
+    }
+
+    img {
+        visibility: hidden;
+    }
+}

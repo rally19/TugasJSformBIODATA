@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWITCHFORIF</title>
+</head>
+<body>
+    <script>
+        let pilih = prompt("Selamat datang di programnya Leonel! \n 1. Perulangan \n 2. Percabangan \n Pilih opsi (nomor):");
+
+        switch(pilih){
+            case '1':
+                perulangan();
+                break;
+            case '2':
+                percabangan();
+                break;
+            default:
+                alert("Input anda tidak valid!");
+                break;
+        }
+
+        function perulangan(){
+            let teksDiulang = prompt("Input teks yang Anda ingin perulangankan:");
+            let berapaDiulang = parseInt(prompt("Input berapa kali teks akan diulang:"));
+
+            if(teksDiulang == isNaN || berapaDiulang == isNaN || berapaDiulang == 0){
+                alert("KOK KOHSONG!");
+            } else {
+                for (let i = 1; i <= berapaDiulang; i++) {
+                document.write(`<h2>(${i}) ${teksDiulang}<h2>\n`);
+                }
+            }
+            
+        }
+
+        function percabangan(){
+            let nilai = parseInt(prompt("Input nilai Anda:"));
+            let penilaian = "";
+
+            if(nilai > 100) penilaian = "MANA ADA!";
+            else if(nilai >= 90) penilaian = "Sangat Memuaskan!";
+            else if(nilai >= 80) penilaian = "Memuaskan!";
+            else if(nilai >= 70) penilaian = "Cukup Memuaskan!";
+            else if(nilai >= 60) penilaian = "Cukup.";
+            else if(nilai >= 1) penilaian = "Sangat Kurang!";
+            else penilaian = "Kosong.";
+
+            document.write(`<h2>Penilaian Anda: ${penilaian}<h2>`);
+        }
+    </script>
+    <a href="index.html">kembali</a>
+</body>
+</html>
